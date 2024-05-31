@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album de fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>Fotitos raras, pero que me gustan, Mi Amor</h1>
+            <button onclick="startPresentation()">Comenzar</button>
+        </div>
+        <div class="slide-show" id="slideShow" style="display: none;">
+            <div class="slide">
+                <img id="slideImage" src="" alt="Foto">
+                <p id="slideMessage"></p>
+            </div>
+        </div>
+        <div class="animation-screen" id="animationScreen" style="display: none;">
+            <div id="animationContainer"></div>
+            <button id="endButton" onclick="showFinalMessage()">Ver Mensaje Final</button>
+        </div>
+        <div class="final-message" id="finalMessage" style="display: none;">
+            <h1>Sé que soy imperfecto. Obviamente cometo muchos errores, soy egoísta y egocéntrico, pero quiero mejorar. En parte por ti, en parte por mí, pero más por ti. Quisiera verte en un futuro y decir: 'Con ella estuve en mi adolescencia, hubo muchas
+                dificultades, pero aquí estamos siendo pareja aún después de tanto tiempo'. Es muy difícil, sí, pero no imposible. Te amo, me enamoro de ti cada vez más. Puede que mi miedo a perderte me haga siempre repetir el mismo tema, y tal vez te
+                sea aburrido que siempre toque de alguna forma el tema. Si es así, dímelo y lo evitaré a toda costa. No te digo que vaya a ser perfecto, pero quiero intentarlo, ser para ti. No sé hacer poemas, canciones o ser detallista; sé programar,
+                y esto es lo que te puedo ofrecer. Jaja, al menos por ahora. No es algo muy elaborado, es cierto, hasta se puede hacer en PowerPoint, pero la intención cuenta. Iré haciendo páginas más elaboradas, ¿y así sí? Tampoco sé hacer algo bien.
+                Este testamento es raro, pero bueno, te amo, ¿sí? Puede que mañana no esté, pasado no lo sé, y quiero recordártelo cada minuto que esté contigo. Eres mi amorcito, ¿te casas conmigo? Obviamente somos muy jóvenes, pero ¿aceptas? Mañana,
+                más tarde, si en 5 o 6 años seguimos juntos, podríamos pensarlo en hacerlo realidad, si es que aceptas ahora, claro. Sino, entiendo. Es una forma rara de pedirte la mano, y no tenemos edad. Te amo, jajaja.</h1>
+        </div>
+    </div>
+    <audio id="backgroundMusic" src="musica.mp3" loop></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
